@@ -233,7 +233,7 @@ const Home = () => {
                                         { articles.map((article, index) => {
                                             return (
                                                 <tr key={ index }>
-                                                    <td><a href={ article.url } target="_blank" className="text-info">{ article.title }</a></td>
+                                                    <td><a href={ article.url } target="_blank" rel="noreferrer" className="text-info">{ article.title }</a></td>
                                                 </tr>
                                             );
                                         }) }
