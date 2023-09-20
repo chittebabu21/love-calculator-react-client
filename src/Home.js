@@ -245,7 +245,7 @@ const Home = () => {
                     </div>
                     <div className="d-flex align-items-center justify-content-around w-100 dark-bg border border-dark rounded-3 m-0 py-2">
                         <h5 className="text-light fs-6">&copy;Love Calculator 2023</h5>
-                        <h5 className="text-light fs-6"><a className="text-light" onClick={ handleTerms } href="">Terms & Conditions</a></h5>
+                        <h5 className="text-light fs-6"><button className="text-light" onClick={ handleTerms }>Terms & Conditions</button></h5>
                     </div>
                 </div>
             </div>

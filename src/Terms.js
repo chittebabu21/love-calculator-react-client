@@ -66,7 +66,7 @@ const Terms = () => {
                         </li>
                     </ol>   
                 </p>
-                <a className="btn btn-outline-info w-25 align-self-center mb-3" onClick={ handleBack } href="">BACK</a>
+                <button className="btn btn-outline-info w-25 align-self-center mb-3" onClick={ handleBack }>BACK</button>
             </div>
             <div className="d-flex align-items-center justify-content-center w-100 bg-dark border border-dark rounded-3 m-0 py-2">
                 <h5 className="text-light fs-6">&copy;Love Calculator 2023</h5>
