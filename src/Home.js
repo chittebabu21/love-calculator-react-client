@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import axios from "axios";
-import dotenv from "dotenv";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
@@ -15,9 +14,6 @@ const Home = () => {
     const [error, setError] = useState("");
     const navigate = useNavigate();
 
-    // configure dotenv
-    dotenv.config();
-
     // method to handle form submit event
     const handleSubmit = async (event) => {
         // prevent default behaviour
@@ -31,7 +27,7 @@ const Home = () => {
         // try catch block to handle exceptions
         try {
             // call the api endpoint
-            const response = await axios.post(process.env.LOVE_SERVER, {
+            const response = await axios.post(process.env.REACT_APP_CALCULATOR_SERVER, {
                 male: {
                     name: maleName,
                     dob: maleDob
@@ -71,7 +67,7 @@ const Home = () => {
             console.error(error);
 
             // set the error in state
-            setError(error.response.data);
+            setError(error.message);
         }
     }
 
@@ -109,7 +105,7 @@ const Home = () => {
         // try catch block to handle exceptions
         try {
             // call the api endpoint
-            const response = await axios.get(process.env.ARTICLE_SERVER, {
+            const response = await axios.get(process.env.REACT_APP_ARTICLE_SERVER, {
                 params: {
                     keywords: keywords
                 }
