@@ -67,7 +67,7 @@ const Home = () => {
             console.error(error);
 
             // set the error in state
-            setError(error.message);
+            setError("Unable to get the results! Please try again later.");
         }
     }
 
