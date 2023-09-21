@@ -114,7 +114,7 @@ const Home = () => {
             // check if response is success
             if (response.data) {
                 // set the article in state
-                console.log(response.data.data);
+                console.log(response.data);
                 setArticles(response.data.data);
             } else {
                 // set the article in state
